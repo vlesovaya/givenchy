@@ -1,0 +1,25 @@
+@mixin font-small() {
+  font-family: 'Prompt', "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-base() {
+  font-family: 'Prompt', "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+@mixin font-medium() {
+  font-family: 'Prompt', "PT Sans", sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
