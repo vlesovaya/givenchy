@@ -23,3 +23,13 @@
   font-style: normal;
   letter-spacing: 0.02em;
 }
+
+@mixin font-large() {
+  font-family: 'Prompt', "PT Sans", sans-serif;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
