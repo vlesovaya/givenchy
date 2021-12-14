@@ -78,15 +78,16 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
-.main__about {
+
+.about {
   margin: 80px 20px;
 }
-.main__description {
+.about__description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.main__title {
+.about__title {
   max-width: 700px;
   margin: 0;
   font-family: "Prompt", "PT Sans", sans-serif;
@@ -97,7 +98,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-.main__subtitle {
+.about__subtitle {
   max-width: 700px;
   margin: 0;
   font-family: "Prompt", "PT Sans", sans-serif;
@@ -107,13 +108,13 @@
   font-style: normal;
   letter-spacing: normal;
 }
-.main__item {
+.about__item {
   min-height: 618px;
   display: flex;
   justify-content: space-between;
   margin: 80px 0 0;
 }
-.main__quote {
+.about__quote {
   max-width: 700px;
   width: 100%;
   font-family: "Prompt", "PT Sans", sans-serif;
@@ -126,26 +127,26 @@
   margin-right: -175px;
   align-self: center;
 }
-.main__quote-text {
+.about__quote-text {
   margin: 0;
 }
-.main__quote-author {
+.about__quote-author {
   margin: 24px 0 0;
 }
-.main__image {
+.about__image {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.main__image_type_medium {
+.about__image_type_medium {
   margin-right: 175px;
   margin-left: auto;
   z-index: 1;
 }
-.main__image_type_large {
+.about__image_type_large {
   margin: 0 0 0 auto;
 }
-.main__text {
+.about__text {
   max-width: 700px;
   align-self: center;
   margin: 0 0 92px 82px;
