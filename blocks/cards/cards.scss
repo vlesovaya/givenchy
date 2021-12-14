@@ -1,0 +1,38 @@
+.cards {
+  width: 100%;
+  margin: 0 auto;
+
+  &__title {
+    margin: 0 auto;
+    @include font-large();
+  }
+
+  &__items {
+    display: grid;
+    margin: 40px auto 80px;
+    max-width: 100%;
+    grid-template-columns: repeat(4, fit-content(350px));
+    column-gap: 0;
+    row-gap: 0;
+    grid-auto-rows: 1fr;
+    overflow-y: hidden;
+  }
+
+  &__item {
+    max-width: 100%;
+    margin: 0 auto;
+    align-self: center;
+  }
+
+  @media screen and (max-width: 1023px){
+    &__items {
+      grid-template-columns: repeat(3, fit-content(350px));
+    }
+  }
+
+  @media screen and (max-width: 767px){
+    &__items {
+      grid-template-columns: repeat(2, fit-content(350px));
+    }
+  }
+}
