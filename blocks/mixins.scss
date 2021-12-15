@@ -33,3 +33,11 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+
+@mixin button() {
+  padding: 11px 0;
+  box-sizing: border-box;
+  @include font-small();
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}

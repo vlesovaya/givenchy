@@ -51,9 +51,6 @@
            alt="Photo of a woman in a beige dress with cutouts on the back and elbows">
     </article>
   </section>
-
-
-
   <section class="cards">
     <h2 class="cards__title">Looks</h2>
     <div class="cards__items">
@@ -72,7 +69,26 @@
            src="images/photo-11.jpg">
     </div>
   </section>
-
 </main>
+<footer class="footer">
+  <div class="footer__container">
+    <p class="footer__text">Subscribe to the newsletterand be the first to know about new collection’s drop date and news</p>
+    <form class="footer__form" action="#" name="footer-form">
+      <div class="footer__form-item">
+        <input class="footer__form-input" id="email" name="email" type="email" placeholder="Eneter your email  here"
+                required autocomplete="off">
+        <button class="footer__button" type="submit">Submit</button>
+      </div>
+      <div class="footer__form-item">
+        <input class="footer__form-input footer__form-input_type_checkbox" id="confirm-subscription"
+                 name="confirm-subscription" type="checkbox" value="confirm subscription">
+        <label class="footer__form-label"
+               for="confirm-subscription">I consent to the processing of my data by GIVENCHY in accordance with the conditions set forth in the Privacy Policy
+        </label>
+      </div>
+    </form>
+    <p class="footer__copyright">&COPY; 2021, Givenchy. Some rights reserved</p>
+  </div>
+</footer>
 </body>
 </html>

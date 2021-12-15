@@ -1,0 +1,105 @@
+.footer {
+  width: 100%;
+  min-height: 372px;
+  background-color: #0A0A0A;
+  color: #ffffff;
+  padding: 40px 0;
+  box-sizing: border-box;
+
+  &__container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    @include font-base();
+    text-align: center;
+    margin: 0;
+  }
+
+  &__form {
+    margin: 40px 0;
+  }
+
+  &__form-item {
+    display: flex;
+    font-size: 0;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__form-input {
+    border: 0.5px solid #ffffff;
+    border-radius: 0;
+    padding: 11px 23px;
+    width: 592px;
+    background-color: #0A0A0A;
+    color: #ffffff;
+    @include font-small();
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: #666666;
+    }
+
+    &_type_checkbox {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      border: none;
+    }
+
+    &_type_checkbox:before {
+      content: '';
+      position: absolute;
+      background-image: url("../../images/unchecked-icon.svg");
+      background-position: center;
+      width: 20px;
+      height: 20px;
+      top: 0;
+      left: 0;
+    }
+
+    &_type_checkbox:checked:before {
+      background-image: url("../../images/checked-icon.svg");
+    }
+  }
+
+  &__button {
+    width: 108px;
+    @include button();
+    padding-left: 23px;
+    padding-right: 23px;
+    border: 0.5px solid #ffffff;
+    color: #0A0A0A;
+    background-color: #ffffff;
+
+    &:hover {
+      border: 0.5px solid #ffffff;
+      background-color: #0A0A0A;
+      color: #ffffff;
+
+      }
+    }
+
+  &__form-label {
+    width: 668px;
+    color: #ffffff;
+    @include font-small();
+    padding-left: 10px;
+  }
+
+  &__copyright {
+    @include font-base();
+    text-align: center;
+    margin: 0 auto;
+
+  }
+  }
