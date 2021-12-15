@@ -1,0 +1,63 @@
+.popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 15;
+
+  &__container {
+    position: relative;
+    margin: 0;
+    padding: 68px 20px 20px;
+    width: 480px;
+    height: 100%;
+    background-color: #0A0A0A;
+    box-sizing: border-box;
+  }
+
+  &__menu-list {
+    height: 722px;
+    list-style: none;
+    @include font-small();
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 245px 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  &__menu-item {
+    margin: 0 auto 80px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__menu-link:hover {
+    border-bottom: 0.5px solid #ffffff;
+    cursor: pointer;
+  }
+
+  &__close {
+      position: absolute;
+      border: none;
+      width: 48px;
+      height: 48px;
+      background-image: url("../../images/close-button.svg");
+      background-color: transparent;
+      top: 20px;
+      left: 20px;
+      cursor: pointer;
+    }
+
+  &__opened {
+    display: block;
+    overflow: hidden;
+  }
+}

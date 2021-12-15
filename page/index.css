@@ -73,6 +73,50 @@
   background-color: #ffffff;
   color: #0A0A0A;
 }
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 48px;
+  min-width: 237px;
+  min-height: 48px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.header__menu-icon {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+}
+.header__menu-icon:before {
+  content: "";
+  position: absolute;
+  background-image: url("../../images/burger-icon.svg");
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+.header__menu-title {
+  display: block;
+  margin: auto 0 auto 16px;
+  font-family: "Prompt", "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
 
 .main {
   max-width: 1440px;
@@ -342,6 +386,67 @@
 }
 .fade-in-right {
   animation: fadeInRight 1s ease-out 300ms;
+}
+
+.popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 15;
+}
+.popup__container {
+  position: relative;
+  margin: 0;
+  padding: 68px 20px 20px;
+  width: 480px;
+  height: 100%;
+  background-color: #0A0A0A;
+  box-sizing: border-box;
+}
+.popup__menu-list {
+  height: 722px;
+  list-style: none;
+  font-family: "Prompt", "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 245px 0;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+.popup__menu-item {
+  margin: 0 auto 80px;
+}
+.popup__menu-item:last-child {
+  margin-bottom: 0;
+}
+.popup__menu-link:hover {
+  border-bottom: 0.5px solid #ffffff;
+  cursor: pointer;
+}
+.popup__close {
+  position: absolute;
+  border: none;
+  width: 48px;
+  height: 48px;
+  background-image: url("../../images/close-button.svg");
+  background-color: transparent;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+.popup__opened {
+  display: block;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=index.css.map */

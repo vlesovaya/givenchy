@@ -51,4 +51,47 @@
     color: #0A0A0A;
   }
 
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 48px;
+    min-width: 237px;
+    min-height: 48px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  &__menu-icon {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+
+    &:before {
+      content: '';
+      position: absolute;
+      background-image: url("../../images/burger-icon.svg");
+      width: 48px;
+      height: 48px;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      z-index: 10;
+    }
+  }
+  &__menu-title {
+    display: block;
+    margin: auto 0 auto 16px;
+    @include font-small();
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
 }
