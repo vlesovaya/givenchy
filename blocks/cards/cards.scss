@@ -9,11 +9,15 @@
     @media screen and (max-width: 1023px){
       @include font-large-tablet();
     }
+
+    @media screen and (max-width: 425px){
+      @include font-large-mobile();
+    }
   }
 
   &__items {
     display: grid;
-    margin: 40px auto 80px;
+    margin: 40px auto 0;
     max-width: 100%;
     grid-template-columns: repeat(4, fit-content(350px));
     column-gap: 0;
@@ -22,12 +26,15 @@
     overflow-y: hidden;
 
     @media screen and (max-width: 1023px){
-      margin-bottom: 60px;
       grid-template-columns: repeat(3, fit-content(350px));
     }
 
     @media screen and (max-width: 767px){
       grid-template-columns: repeat(2, fit-content(350px));
+    }
+
+    @media screen and (max-width: 425px){
+      margin: 20px auto 0;
     }
   }
 

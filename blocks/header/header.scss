@@ -8,6 +8,10 @@
     min-height: 646px;
   }
 
+  @media screen and (max-width: 767px){
+    min-height: 426px;
+  }
+
   &__container {
     position: relative;
     max-width: 1440px;
@@ -16,6 +20,10 @@
 
     @media screen and (max-width: 1023px){
       max-width: 768px;
+    }
+
+    @media screen and (max-width: 767px){
+      min-width: 320px;
     }
   }
 
@@ -32,6 +40,12 @@
       top: 223px;
       max-width: 485px;
       @include font-large-tablet();
+    }
+
+    @media screen and (max-width: 600px){
+      top: 111px;
+      max-width: 280px;
+      @include font-large-mobile();
     }
   }
 
@@ -52,23 +66,34 @@
         max-width: 486px;
       }
     }
+
+    @media screen and (max-width: 600px){
+      max-width: 320px;
+      min-height: 426px;
+    }
   }
 
   &__button {
     position: absolute;
     bottom: 318px;
     right: 370px;
-    max-width: 350px;
+    width: 350px;
     @include button();
-    padding-left: 30px;
-    padding-right: 30px;
     color: #ffffff;
     background-color: #0A0A0A;
     border: 0.5px solid $color-base;
+    box-sizing: border-box;
 
     @media screen and (max-width: 1023px){
       right: 155px;
       bottom: 223px;
+    }
+
+    @media screen and (max-width: 600px){
+      width: 280px;
+      right: 20px;
+      bottom: 111px;
+      @include button-mobile();
     }
   }
 
@@ -86,6 +111,12 @@
     position: absolute;
     top: 20px;
     left: 20px;
+
+    @media screen and (max-width: 600px){
+      min-height: 26px;
+      padding-left: 24px;
+      top: 16px;
+    }
   }
 
   &__menu-icon {
@@ -100,6 +131,11 @@
     border: none;
     background-color: transparent;
 
+    @media screen and (max-width: 600px){
+      width: 24px;
+      height: 24px;
+    }
+
     &:before {
       content: '';
       position: absolute;
@@ -110,14 +146,27 @@
       left: 0;
       cursor: pointer;
       z-index: 10;
+
+      @media screen and (max-width: 600px){
+        background-image: url("../../images/burger-icon-mobile.svg");
+        width: 24px;
+        height: 24px;
+      }
     }
   }
   &__menu-title {
     display: block;
     margin: auto 0 auto 16px;
     @include font-small();
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+
+    @media screen and (max-width: 600px){
+      @include font-small-mobile();
+      line-height: 1;
+      margin: auto 0 auto 18px;
+    }
   }
 
 }

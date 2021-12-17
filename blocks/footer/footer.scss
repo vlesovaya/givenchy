@@ -6,6 +6,10 @@
   padding: 40px 0;
   box-sizing: border-box;
 
+  @media screen and (max-width: 767px){
+    padding: 40px 20px;
+  }
+
   &__container {
     max-width: 700px;
     margin: 0 auto;
@@ -13,12 +17,20 @@
     @media screen and (max-width: 1023px){
       max-width: 486px;
     }
+
+    @media screen and (max-width: 425px){
+      max-width: 280px;
+    }
   }
 
   &__text {
     @include font-base();
     text-align: center;
     margin: 0;
+
+    @media screen and (max-width: 425px){
+      @include font-small();
+    }
   }
 
   &__form {
@@ -34,6 +46,13 @@
     &:last-child {
       margin: 0;
     }
+
+    &_type_mobile {
+      @media screen and (max-width: 425px){
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 
   &__form-input {
@@ -48,6 +67,12 @@
 
     &::placeholder {
       color: #666666;
+    }
+
+    @media screen and (max-width: 425px){
+      max-width: 280px;
+      padding: 9px 0;
+      text-align: center;
     }
 
     &_type_checkbox {
@@ -90,8 +115,13 @@
       border: 0.5px solid #ffffff;
       background-color: #0A0A0A;
       color: #ffffff;
-
       }
+
+    @media screen and (max-width: 425px){
+      width: 280px;
+      padding: 9px 0;
+    }
+
     }
 
   &__form-label {
@@ -103,6 +133,11 @@
     @media screen and (max-width: 1023px){
       max-width: 454px;
     }
+
+    @media screen and (max-width: 425px){
+      @include font-small-mobile();
+      max-width: 248px;
+    }
   }
 
   &__copyright {
@@ -110,5 +145,8 @@
     text-align: center;
     margin: 0 auto;
 
+    @media screen and (max-width: 425px){
+      @include font-small();
+    }
   }
-  }
+}

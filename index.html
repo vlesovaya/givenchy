@@ -21,7 +21,7 @@
   </div>
 </header>
 <main class="main">
-  <section class="about">
+  <section class="about" id="about">
     <div class="about__description">
       <h2 class="about__title">About</h2>
       <p class="about__subtitle">The Spring-Summer ‘21 collection explores Givenchy in the form of a stream of
@@ -40,13 +40,13 @@
            alt="Photo of a woman in red with a bag of gold color">
     </article>
     <article class="about__item">
-      <img class="about__image about__image_type_small fade-in-left" src="./images/photo-2.jpg"
-           alt="Photo of a man in black with a big black bag">
       <p class="about__text fade-in-right">Matthew M. Williams reveals his vision with help from an all-star lineup of likeminded
         artists. The Creative Director called on close friends in his tight-knit community of artists. Kendall Jenner,
         Bella Hadid, Playboi Carti and the supermodels Anok Yai and Liam Powers were each invited to put their own stamp
         on key pieces, the better to highlight the importance of cultivating a powerful personal style.
       </p>
+      <img class="about__image about__image_type_small fade-in-left" src="./images/photo-2.jpg"
+           alt="Photo of a man in black with a big black bag">
     </article>
     <article class="about__item">
       <div class="about__quote fade-in-right">
@@ -59,7 +59,7 @@
            alt="Photo of a woman in a beige dress with cutouts on the back and elbows">
     </article>
   </section>
-  <section class="cards">
+  <section class="cards" id="looks">
     <h2 class="cards__title">Looks</h2>
     <div class="cards__items">
       <img alt="Photo of a girl in black on a light green background" class="cards__item" src="./images/photo-4.jpg">
@@ -71,18 +71,18 @@
       <img alt="Photo of a girl in a light pink coat on an orange background" class="cards__item"
            src="./images/photo-8.jpg">
       <img alt="Photo of a girl in black on a red background" class="cards__item" src="./images/photo-9.jpg">
-<!--      <img alt="Photo of a girl in a green sweater, transparent skirt and red leggings on a sandy background" class="cards__item"-->
-<!--           src="images/photo-10.jpg">-->
-<!--      <img alt="Photo of a girl in black pants, a white T-shirt and a black clutch on a blue background" class="cards__item"-->
-<!--           src="images/photo-11.jpg">-->
+      <img alt="Photo of a girl in a green sweater, transparent skirt and red leggings on a sandy background" class="cards__item"
+           src="images/photo-10.jpg">
+      <img alt="Photo of a girl in black pants, a white T-shirt and a black clutch on a blue background" class="cards__item"
+           src="images/photo-11.jpg">
     </div>
   </section>
 </main>
-<footer class="footer">
+<footer class="footer" id="subscribe">
   <div class="footer__container">
     <p class="footer__text">Subscribe to the newsletterand be the first to know about new collection’s drop date and news</p>
     <form class="footer__form" action="#" name="footer-form">
-      <div class="footer__form-item">
+      <div class="footer__form-item footer__form-item_type_mobile">
         <input class="footer__form-input" id="email" name="email" type="email" placeholder="Eneter your email  here"
                 required autocomplete="off">
         <button class="footer__button" type="submit">Submit</button>
@@ -103,13 +103,13 @@
     <button class="popup__close" type="submit" value="закрыть"></button>
     <ul class="popup__menu-list">
       <li class="popup__menu-item">
-        <a class="popup__menu-link">About</a>
+        <a class="popup__menu-link" href="#about" title="go to About section">About</a>
       </li>
       <li class="popup__menu-item">
-        <a class="popup__menu-link">Looks</a>
+        <a class="popup__menu-link" href="#looks" title="go to Look section">Looks</a>
       </li>
       <li class="popup__menu-item">
-        <a class="popup__menu-link">Subscribe</a>
+        <a class="popup__menu-link" href="#subscribe" title="go to Subscribe section">Subscribe</a>
       </li>
     </ul>
   </div>
