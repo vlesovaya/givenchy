@@ -15,7 +15,7 @@
 }
 .header {
   width: 100%;
-  max-height: 900px;
+  min-height: 900px;
   font-family: "Prompt", "PT Sans", sans-serif;
   font-size: 32px;
   line-height: 44px;
@@ -24,15 +24,21 @@
   letter-spacing: 0.02em;
   background-color: #E7E7E2;
 }
+@media screen and (max-width: 1023px) {
+  .header {
+    min-height: 646px;
+  }
+}
 .header__container {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+  display: flex;
 }
-.header__description {
-  position: absolute;
-  top: 310px;
-  right: 20px;
+@media screen and (max-width: 1023px) {
+  .header__container {
+    max-width: 768px;
+  }
 }
 .header__title {
   position: absolute;
@@ -41,17 +47,47 @@
   width: 700px;
   margin: 0;
   text-transform: uppercase;
+  font-family: "Prompt", "PT Sans", sans-serif;
   font-size: 48px;
   line-height: 64px;
+  font-weight: 500;
+  font-style: normal;
   letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1023px) {
+  .header__title {
+    top: 223px;
+    max-width: 485px;
+    font-family: "Prompt", "PT Sans", sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
 }
 .header__image {
   max-width: 700px;
   margin: 0 0 0 24px;
 }
+.header__image_type_tablet {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .header__image {
+    display: none;
+    margin: 0;
+  }
+  .header__image_type_tablet {
+    display: block;
+    max-width: 486px;
+  }
+}
 .header__button {
   position: absolute;
-  bottom: 330px;
+  bottom: 318px;
   right: 370px;
   max-width: 350px;
   padding: 11px 0;
@@ -68,6 +104,12 @@
   color: #ffffff;
   background-color: #0A0A0A;
   border: 0.5px solid #0A0A0A;
+}
+@media screen and (max-width: 1023px) {
+  .header__button {
+    right: 155px;
+    bottom: 223px;
+  }
 }
 .header__button:hover {
   background-color: #ffffff;
@@ -124,9 +166,19 @@
   padding: 0 20px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 1023px) {
+  .main {
+    max-width: 768px;
+  }
+}
 
 .about {
   margin: 80px 0;
+}
+@media screen and (max-width: 1023px) {
+  .about {
+    margin: 60px 0 80px;
+  }
 }
 .about__description {
   display: flex;
@@ -144,6 +196,18 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1023px) {
+  .about__title {
+    max-width: 364px;
+    font-family: "Prompt", "PT Sans", sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
 .about__subtitle {
   max-width: 700px;
   margin: 0;
@@ -154,15 +218,29 @@
   font-style: normal;
   letter-spacing: normal;
 }
+@media screen and (max-width: 1023px) {
+  .about__subtitle {
+    max-width: 364px;
+  }
+}
 .about__item {
-  min-height: 618px;
   display: flex;
   justify-content: space-between;
   margin: 80px 0 0;
 }
+@media screen and (max-width: 1023px) {
+  .about__item {
+    margin: 70px 0 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__item {
+    flex-direction: column;
+    margin: 40px 0 0;
+  }
+}
 .about__quote {
   max-width: 700px;
-  width: 100%;
   font-family: "Prompt", "PT Sans", sans-serif;
   font-size: 32px;
   line-height: 44px;
@@ -170,8 +248,13 @@
   font-style: normal;
   letter-spacing: 0.02em;
   z-index: 5;
-  margin-right: -175px;
   align-self: center;
+  margin: 0 -175px 0 0;
+}
+@media screen and (max-width: 1023px) {
+  .about__quote {
+    max-width: 364px;
+  }
 }
 .about__quote-text {
   margin: 0;
@@ -180,17 +263,42 @@
   margin: 24px 0 0;
 }
 .about__image {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  max-width: 875px;
+}
+@media screen and (max-width: 1023px) {
+  .about__image {
+    max-width: 485px;
+    margin: 50px 0;
+  }
 }
 .about__image_type_medium {
   margin-right: 175px;
-  margin-left: auto;
+  margin-left: 0;
   z-index: 1;
 }
+@media screen and (max-width: 1023px) {
+  .about__image_type_medium {
+    margin-right: 121px;
+    height: 452px;
+  }
+}
 .about__image_type_large {
-  margin: 0 0 0 auto;
+  margin: 0;
+}
+@media screen and (max-width: 1023px) {
+  .about__image_type_large_type_large {
+    width: 485px;
+  }
+}
+.about__image_type_small {
+  width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .about__image_type_small {
+    width: 304px;
+    height: 100%;
+    margin-top: 40px;
+  }
 }
 .about__text {
   max-width: 700px;
@@ -202,6 +310,12 @@
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
+}
+@media screen and (max-width: 1023px) {
+  .about__text {
+    max-width: 373px;
+    margin: 0 -9px 50px 60px;
+  }
 }
 
 .cards {
@@ -218,6 +332,17 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1023px) {
+  .cards__title {
+    font-family: "Prompt", "PT Sans", sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
 .cards__items {
   display: grid;
   margin: 40px auto 80px;
@@ -228,13 +353,9 @@
   grid-auto-rows: 1fr;
   overflow-y: hidden;
 }
-.cards__item {
-  max-width: 100%;
-  margin: 0 auto;
-  align-self: center;
-}
 @media screen and (max-width: 1023px) {
   .cards__items {
+    margin-bottom: 60px;
     grid-template-columns: repeat(3, fit-content(350px));
   }
 }
@@ -242,6 +363,11 @@
   .cards__items {
     grid-template-columns: repeat(2, fit-content(350px));
   }
+}
+.cards__item {
+  max-width: 100%;
+  margin: 0 auto;
+  align-self: center;
 }
 
 .footer {
@@ -255,6 +381,11 @@
 .footer__container {
   max-width: 700px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1023px) {
+  .footer__container {
+    max-width: 486px;
+  }
 }
 .footer__text {
   font-family: "Prompt", "PT Sans", sans-serif;
@@ -302,6 +433,7 @@
   width: 20px;
   height: 20px;
   padding: 0;
+  margin: 2px 0 0 2px;
   border: none;
 }
 .footer__form-input_type_checkbox:before {
@@ -311,8 +443,8 @@
   background-position: center;
   width: 20px;
   height: 20px;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: 2px;
 }
 .footer__form-input_type_checkbox:checked:before {
   background-image: url("../../images/checked-icon.svg");
@@ -348,6 +480,11 @@
   font-weight: 400;
   font-style: normal;
   padding-left: 10px;
+}
+@media screen and (max-width: 1023px) {
+  .footer__form-label {
+    max-width: 454px;
+  }
 }
 .footer__copyright {
   font-family: "Prompt", "PT Sans", sans-serif;

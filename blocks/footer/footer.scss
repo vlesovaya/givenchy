@@ -9,6 +9,10 @@
   &__container {
     max-width: 700px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1023px){
+      max-width: 486px;
+    }
   }
 
   &__text {
@@ -53,6 +57,7 @@
       width: 20px;
       height: 20px;
       padding: 0;
+      margin: 2px 0 0 2px;
       border: none;
     }
 
@@ -63,8 +68,8 @@
       background-position: center;
       width: 20px;
       height: 20px;
-      top: 0;
-      left: 0;
+      top: 2px;
+      left: 2px;
     }
 
     &_type_checkbox:checked:before {
@@ -94,6 +99,10 @@
     color: #ffffff;
     @include font-small();
     padding-left: 10px;
+
+    @media screen and (max-width: 1023px){
+      max-width: 454px;
+    }
   }
 
   &__copyright {

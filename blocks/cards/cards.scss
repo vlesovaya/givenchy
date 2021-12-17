@@ -4,7 +4,11 @@
 
   &__title {
     margin: 0 auto;
-    @include font-large();
+    @include font-large-desctop();
+
+    @media screen and (max-width: 1023px){
+      @include font-large-tablet();
+    }
   }
 
   &__items {
@@ -16,23 +20,20 @@
     row-gap: 0;
     grid-auto-rows: 1fr;
     overflow-y: hidden;
+
+    @media screen and (max-width: 1023px){
+      margin-bottom: 60px;
+      grid-template-columns: repeat(3, fit-content(350px));
+    }
+
+    @media screen and (max-width: 767px){
+      grid-template-columns: repeat(2, fit-content(350px));
+    }
   }
 
   &__item {
     max-width: 100%;
     margin: 0 auto;
     align-self: center;
-  }
-
-  @media screen and (max-width: 1023px){
-    &__items {
-      grid-template-columns: repeat(3, fit-content(350px));
-    }
-  }
-
-  @media screen and (max-width: 767px){
-    &__items {
-      grid-template-columns: repeat(2, fit-content(350px));
-    }
   }
 }
