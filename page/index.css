@@ -133,6 +133,8 @@
   background-color: #0A0A0A;
   border: 0.5px solid #0A0A0A;
   box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
 }
 @media screen and (max-width: 1023px) {
   .header__button {
@@ -543,6 +545,7 @@
   margin: 40px auto 0;
   max-width: 100%;
   grid-template-columns: repeat(4, fit-content(350px));
+  grid-template-rows: repeat(2, 1fr);
   column-gap: 0;
   row-gap: 0;
   grid-auto-rows: 1fr;
@@ -556,6 +559,7 @@
 @media screen and (max-width: 767px) {
   .cards__items {
     grid-template-columns: repeat(2, fit-content(350px));
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 @media screen and (max-width: 425px) {
@@ -567,6 +571,26 @@
   max-width: 100%;
   margin: 0 auto;
   align-self: center;
+}
+@media screen and (max-width: 1023px) {
+  .cards__item:nth-child(7) {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cards__item:nth-child(7) {
+    display: block;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .cards__item:nth-child(8) {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cards__item:nth-child(8) {
+    display: block;
+  }
 }
 
 .footer {
@@ -782,6 +806,32 @@
   animation: fadeInRight 1s ease-out 300ms;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  -webkit-animation: fadeIn;
+  animation: fadeIn 1s linear;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fade-out {
+  -webkit-animation: fadeOut;
+  animation: fadeOut 1s linear;
+}
+
 .popup {
   display: none;
   width: 100%;
@@ -796,7 +846,7 @@
   margin: 0;
   padding: 68px 20px 20px;
   max-width: 480px;
-  min-height: 810px;
+  height: 100%;
   background-color: #000000;
   box-sizing: border-box;
   justify-content: center;
@@ -807,7 +857,6 @@
   .popup__container {
     padding: 44px 20px 20px;
     min-width: 320px;
-    min-height: 360px;
   }
 }
 .popup__menu-list {
