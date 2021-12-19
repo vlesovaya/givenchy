@@ -6,6 +6,7 @@
     opacity: 1;
   }
 }
+
 .fade-in {
   animation: fadeIn 2s ease-out;
 }

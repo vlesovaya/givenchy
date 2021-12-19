@@ -1,6 +1,7 @@
 # Project: Givenchy (Summer collection 2021 website)
 
-Givenchy is a French luxury fashion and perfume house. It hosts the brand of haute couture clothing, accessories and Parfums Givenchy, perfumes and cosmetics.
+Givenchy is a French luxury fashion and perfume house. It hosts the brand of haute couture clothing, accessories and
+Parfums Givenchy, perfumes and cosmetics.
 
 ## Stack:
 
