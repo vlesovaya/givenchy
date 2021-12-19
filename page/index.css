@@ -4,14 +4,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../../fonts/Prompt-Regular.woff2) format("woff2"), url(../../fonts/Prompt-Regular.woff) format("woff");
+  src: url(../fonts/Prompt-Regular.woff2) format("woff2"), url(../fonts/Prompt-Regular.woff) format("woff");
 }
 @font-face {
   font-family: "Prompt";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Inter"), url("../../fonts/Prompt-Medium.woff2") format("woff2"), url("../../fonts/Prompt-Medium.woff") format("woff");
+  src: local("Inter"), url("../fonts/Prompt-Medium.woff2") format("woff2"), url("../fonts/Prompt-Medium.woff") format("woff");
 }
 .header {
   width: 100%;
@@ -694,7 +694,7 @@
 .footer__form-input_type_checkbox:before {
   content: "";
   position: absolute;
-  background-image: url("../../images/unchecked-icon.svg");
+  background-image: url("../images/unchecked-icon.svg");
   background-position: center;
   width: 20px;
   height: 20px;
@@ -702,7 +702,7 @@
   left: 2px;
 }
 .footer__form-input_type_checkbox:checked:before {
-  background-image: url("../../images/checked-icon.svg");
+  background-image: url("../images/checked-icon.svg");
 }
 .footer__button {
   width: 108px;
@@ -789,6 +789,7 @@
   }
 }
 .fade-in-left {
+  -webkit-animation: fadeInLeft 1s ease-out 300ms;
   animation: fadeInLeft 1s ease-out 300ms;
 }
 
@@ -803,6 +804,7 @@
   }
 }
 .fade-in-right {
+  -webkit-animation: fadeInRight 1s ease-out 300ms;
   animation: fadeInRight 1s ease-out 300ms;
 }
 
@@ -903,7 +905,7 @@
   border: none;
   width: 48px;
   height: 48px;
-  background-image: url("../../images/close-button.svg");
+  background-image: url("../images/close-button.svg");
   background-color: transparent;
   top: 20px;
   left: 20px;
@@ -913,7 +915,7 @@
   .popup__close {
     width: 24px;
     height: 24px;
-    background-image: url("../../images/close-button-mobile.svg");
+    background-image: url("../images/close-button-mobile.svg");
   }
 }
 .popup_opened {
