@@ -11,6 +11,7 @@
 }
 
 .fade-in-left {
+  -webkit-animation: fadeInLeft 1s ease-out 300ms;
   animation: fadeInLeft 1s ease-out 300ms;
 }
 
@@ -28,6 +29,7 @@
 }
 
 .fade-in-right {
+  -webkit-animation: fadeInRight 1s ease-out 300ms;
   animation: fadeInRight 1s ease-out 300ms;
 }
 
