@@ -201,7 +201,7 @@
 .header__menu-button:before {
   content: "";
   position: absolute;
-  background-image: url("../../images/burger-icon.svg");
+  background-image: url("../images/burger-icon.svg");
   width: 48px;
   height: 48px;
   top: 0;
@@ -211,7 +211,7 @@
 }
 @media screen and (max-width: 600px) {
   .header__menu-button:before {
-    background-image: url("../../images/burger-icon-mobile.svg");
+    background-image: url("../images/burger-icon-mobile.svg");
     width: 24px;
     height: 24px;
   }
