@@ -37,7 +37,7 @@
     text-transform: uppercase;
     @include font-large-desctop();
 
-    @media screen and (max-width: $tablet-width) {
+    @media screen and (max-width: $tablet-large-width) {
       top: 223px;
       max-width: 485px;
       @include font-large-tablet();
