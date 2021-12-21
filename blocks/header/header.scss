@@ -2,13 +2,13 @@
   width: 100%;
   min-height: 900px;
   @include font-medium();
-  background-color: #E7E7E2;
+  background-color: $bg-color-header;
 
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: $tablet-large-width) {
     min-height: 646px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet-width) {
     min-height: 426px;
   }
 
@@ -19,11 +19,11 @@
     margin: 0 auto;
     display: flex;
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: $tablet-large-width) {
       max-width: 768px;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet-width) {
       min-width: 320px;
     }
   }
@@ -37,7 +37,7 @@
     text-transform: uppercase;
     @include font-large-desctop();
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: $tablet-width) {
       top: 223px;
       max-width: 485px;
       @include font-large-tablet();
@@ -53,7 +53,7 @@
   &__picture {
     max-height: 900px;
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: $tablet-large-width) {
       max-height: 646px;
     }
 
@@ -67,7 +67,7 @@
     max-height: 900px;
     margin: 0 0 0 24px;
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: $tablet-large-width) {
       margin: 0;
     }
 
@@ -82,15 +82,15 @@
     right: 370px;
     width: 350px;
     @include button();
-    color: #ffffff;
-    background-color: #0A0A0A;
-    border: 0.5px solid $color-base;
+    color: $color-white;
+    background-color: $bg-color-dark;
+    border: 0.5px solid $color-dark;
     box-sizing: border-box;
 
     text-decoration: none;
     text-align: center;
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: $tablet-large-width) {
       right: 155px;
       bottom: 223px;
     }
@@ -104,8 +104,8 @@
   }
 
   &__button:hover {
-    background-color: #ffffff;
-    color: #0A0A0A;
+    background-color: $bg-color-white;
+    color: $color-dark;
   }
 
 

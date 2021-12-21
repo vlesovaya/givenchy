@@ -13,13 +13,13 @@
     padding: 68px 20px 20px;
     max-width: 480px;
     height: 100%;
-    background-color: #000000;
+    background-color: $bg-color-menu;
     box-sizing: border-box;
     justify-content: center;
     display: flex;
     align-items: center;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet-width) {
       padding: 44px 20px 20px;
       min-width: 320px;
     }
@@ -49,7 +49,7 @@
       margin-bottom: 0;
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: $mobile-width) {
       margin: 0 auto 40px;
     }
   }
@@ -59,7 +59,7 @@
     color: #ffffff;
 
     &:hover {
-      border-bottom: 0.5px solid #ffffff;
+      border-bottom: 0.5px solid $color-white;
       cursor: pointer;
     }
   }
