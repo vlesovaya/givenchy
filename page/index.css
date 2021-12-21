@@ -4,14 +4,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/Prompt-Regular.woff2) format("woff2"), url(../fonts/Prompt-Regular.woff) format("woff");
+  src: url("../vendor/fonts/Prompt-Regular.woff2") format("woff2"), url("../vendor/fonts/Prompt-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Prompt";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Inter"), url("../fonts/Prompt-Medium.woff2") format("woff2"), url("../fonts/Prompt-Medium.woff") format("woff");
+  src: url("../vendor/fonts/Prompt-Medium.woff2") format("woff2"), url("../vendor/fonts/Prompt-Medium.woff") format("woff");
 }
 .header {
   width: 100%;
