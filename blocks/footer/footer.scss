@@ -1,12 +1,12 @@
 .footer {
   width: 100%;
   min-height: 372px;
-  background-color: #0A0A0A;
-  color: #ffffff;
+  background-color: $bg-color-dark;
+  color: $color-white;
   padding: 40px 0;
   box-sizing: border-box;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet-width) {
     padding: 40px 20px;
   }
 
@@ -14,11 +14,11 @@
     max-width: 700px;
     margin: 0 auto;
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: $tablet-large-width) {
       max-width: 486px;
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: $mobile-width) {
       max-width: 280px;
     }
   }
@@ -28,7 +28,7 @@
     text-align: center;
     margin: 0;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: $mobile-width) {
       @include font-small();
     }
   }
@@ -48,7 +48,7 @@
     }
 
     &_type_mobile {
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: $mobile-width) {
         display: flex;
         flex-direction: column;
       }
@@ -60,16 +60,16 @@
     border-radius: 0;
     padding: 11px 23px;
     width: 592px;
-    background-color: #0A0A0A;
-    color: #ffffff;
+    background-color: $bg-color-dark;
+    color: $color-white;
     @include font-small();
     box-sizing: border-box;
 
     &::placeholder {
-      color: #666666;
+      color: $color-grey;
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: $mobile-width) {
       max-width: 280px;
       padding: 9px 0;
       text-align: center;
@@ -107,17 +107,17 @@
     @include button();
     padding-left: 23px;
     padding-right: 23px;
-    border: 0.5px solid #ffffff;
-    color: #0A0A0A;
-    background-color: #ffffff;
+    border: 0.5px solid $color-white;
+    color: $color-dark;
+    background-color: $bg-color-white;
 
     &:hover {
-      border: 0.5px solid #ffffff;
-      background-color: #0A0A0A;
-      color: #ffffff;
+      border: 0.5px solid $color-white;
+      background-color: $bg-color-dark;
+      color: $color-white;
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: $mobile-width) {
       width: 280px;
       padding: 9px 0;
     }
@@ -130,11 +130,11 @@
     @include font-small();
     padding-left: 10px;
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: $tablet-large-width) {
       max-width: 454px;
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: $mobile-width) {
       @include font-small-mobile();
       max-width: 248px;
     }
@@ -145,7 +145,7 @@
     text-align: center;
     margin: 0 auto;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: $mobile-width) {
       @include font-small();
     }
   }

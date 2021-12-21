@@ -9,14 +9,15 @@
 <body class="page">
 <header class="header">
   <div class="header__container">
-    <img alt="Photo of a man in a coat color dusty rose" class="header__image" src="images/photo-header.jpg">
-    <img alt="Photo of a man in a coat color dusty rose" class="header__image header__image_type_tablet"
-         src="images/photo-header-tablet.jpg">
+    <picture class="header__picture">
+      <source media="(max-width: 1023px)" srcset="images/photo-header-tablet.jpg">
+      <img alt="Photo of a man in a coat color dusty rose" class="header__image" src="images/photo-header.jpg">
+    </picture>
     <h1 class="header__title">Givenchy<br> Spring Summer 2021<br> by Matthew M. Williams</h1>
     <a class="header__button" href="#subscribe" title="Click to go to Subscribe section">Subscribe to collection’s
       news</a>
     <div class="header__menu">
-      <button class="header__menu-button"></button>
+      <button class="header__menu-button" type="button"></button>
       <p class="header__menu-title">menu</p>
     </div>
   </div>
@@ -35,7 +36,7 @@
           construction and comfort co-exist. My ethos is about the luxury of infusing clothes with your own personality,
           not being worn by them,”
         </blockquote>
-        <p class="about__quote-author fadeInLeft">Matthew M. Williams.</p>
+        <p class="about__quote-author">Matthew M. Williams.</p>
       </div>
       <img alt="Photo of a woman in red with a bag of gold color"
            class="about__image about__image_type_medium fade-in-left"
@@ -110,7 +111,7 @@
 </footer>
 <section class="popup popup_type_menu">
   <div class="popup__container">
-    <button class="popup__close" type="submit" value="close"></button>
+    <button class="popup__close" type="button" value="close"></button>
     <ul class="popup__menu-list">
       <li class="popup__menu-item">
         <a class="popup__menu-link" href="#about" title="Click to go to About section">About</a>

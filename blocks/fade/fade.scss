@@ -1,4 +1,4 @@
-@keyframes fadeInLeft {
+@keyframes fade-in-left {
   from {
     opacity: 0;
     transform: translate3d(-100%, 0, 0);
@@ -11,12 +11,12 @@
 }
 
 .fade-in-left {
-  -webkit-animation: fadeInLeft 1s ease-out 300ms;
-  animation: fadeInLeft 1s ease-out 300ms;
+  -webkit-animation: fade-in-left 1s ease-out 300ms;
+  animation: fade-in-left 1s ease-out 300ms;
 }
 
 
-@keyframes fadeInRight {
+@keyframes fade-in-right {
   from {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
@@ -29,11 +29,11 @@
 }
 
 .fade-in-right {
-  -webkit-animation: fadeInRight 1s ease-out 300ms;
-  animation: fadeInRight 1s ease-out 300ms;
+  -webkit-animation: fade-in-right 1s ease-out 300ms;
+  animation: fade-in-right 1s ease-out 300ms;
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -44,11 +44,11 @@
 }
 
 .fade-in {
-  -webkit-animation: fadeIn;
-  animation: fadeIn 1s linear;
+  -webkit-animation: fade-in;
+  animation: fade-in 1s linear;
 }
 
-@keyframes fadeOut {
+@keyframes fade-out {
   from {
     opacity: 1;
   }
@@ -59,6 +59,6 @@
 }
 
 .fade-out {
-  -webkit-animation: fadeOut;
-  animation: fadeOut 1s linear;
+  -webkit-animation: fade-out;
+  animation: fade-out 1s linear;
 }
