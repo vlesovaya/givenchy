@@ -4,14 +4,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../vendor/fonts/Prompt-Regular.woff2") format("woff2"), url("../vendor/fonts/Prompt-Regular.woff") format("woff");
+  src: url("../../fonts/Prompt-Regular.woff2") format("woff2"), url("../../fonts/Prompt-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Prompt";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../vendor/fonts/Prompt-Medium.woff2") format("woff2"), url("../vendor/fonts/Prompt-Medium.woff") format("woff");
+  src: url("../../fonts/Prompt-Medium.woff2") format("woff2"), url("../../fonts/Prompt-Medium.woff") format("woff");
 }
 .header {
   width: 100%;
@@ -91,27 +91,32 @@
     text-transform: uppercase;
   }
 }
+.header__picture {
+  max-height: 900px;
+}
+@media screen and (max-width: 1023px) {
+  .header__picture {
+    max-height: 646px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__picture {
+    max-height: 426px;
+  }
+}
 .header__image {
   max-width: 700px;
+  max-height: 900px;
   margin: 0 0 0 24px;
-}
-.header__image_type_tablet {
-  display: none;
 }
 @media screen and (max-width: 1023px) {
   .header__image {
-    display: none;
     margin: 0;
-  }
-  .header__image_type_tablet {
-    display: block;
-    max-width: 486px;
   }
 }
 @media screen and (max-width: 600px) {
   .header__image {
     max-width: 320px;
-    min-height: 426px;
   }
 }
 .header__button {
@@ -778,7 +783,7 @@
   }
 }
 
-@keyframes fadeInLeft {
+@keyframes fade-in-left {
   from {
     opacity: 0;
     transform: translate3d(-100%, 0, 0);
@@ -789,11 +794,11 @@
   }
 }
 .fade-in-left {
-  -webkit-animation: fadeInLeft 1s ease-out 300ms;
-  animation: fadeInLeft 1s ease-out 300ms;
+  -webkit-animation: fade-in-left 1s ease-out 300ms;
+  animation: fade-in-left 1s ease-out 300ms;
 }
 
-@keyframes fadeInRight {
+@keyframes fade-in-right {
   from {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
@@ -804,11 +809,11 @@
   }
 }
 .fade-in-right {
-  -webkit-animation: fadeInRight 1s ease-out 300ms;
-  animation: fadeInRight 1s ease-out 300ms;
+  -webkit-animation: fade-in-right 1s ease-out 300ms;
+  animation: fade-in-right 1s ease-out 300ms;
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -817,11 +822,11 @@
   }
 }
 .fade-in {
-  -webkit-animation: fadeIn;
-  animation: fadeIn 1s linear;
+  -webkit-animation: fade-in;
+  animation: fade-in 1s linear;
 }
 
-@keyframes fadeOut {
+@keyframes fade-out {
   from {
     opacity: 1;
   }
@@ -830,8 +835,8 @@
   }
 }
 .fade-out {
-  -webkit-animation: fadeOut;
-  animation: fadeOut 1s linear;
+  -webkit-animation: fade-out;
+  animation: fade-out 1s linear;
 }
 
 .popup {
